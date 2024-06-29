@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+}
+
+main {
+  margin-bottom: 100px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 40px;
+
+  /* padding-right: 40px; */
+}
+
+header img {
+  width: 60px;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.intro {
+  display: flex;
+  padding: 1px 40px;
+  margin-bottom: 40px;
+}
+
+.text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 40px;
+  flex: 1;
+}
+
+.image-div {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.image-div img {
+  max-width: 80%;
+}
+
+.txt1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.txt2 {
+  font-size: 45px;
+  letter-spacing: 4px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.txt3 {
+  font-size: 18px;
+  color: gray;
+}
+
+.line-x {
+  margin-top: 15px;
+  border-bottom: 3px solid black;
+  width: 60px;
+}
+
+.intro button {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: .5rem;
+  background-color: #ffffff;
+}
+
+.sec2, .sec3 {
+  background-color: #171717;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+}
+
+.top, .top1 {
+  display: flex;
+}
+
+.left p {
+  /* max-width: 30rem; */
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.left, .right {
+  color: white;
+  display: flex;
+  flex: 1;
+}
+
+.right {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.right button {
+  background-color: #171717;
+  color: #ffffff;
+  padding: 9px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.down img {
+  margin-top: 20px;
+  max-width: 100%;
+  margin-bottom: 80px;
+}
+
+.top1 {
+  margin-top: 30px;
+}
+
+.left1, .right1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: white;
+}
+
+.left1 {
+  padding-left: 40px;
+}
+
+.left1 .line-x {
+  border-bottom: 3px solid white;
+  width: 70px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  column-gap: 60px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #171717;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #555;
+  transition: transform 0.3s;
+  color: #ffffff;
+}
+
+.box-h {
+  font-size: 30px;
+  margin: 0;
+}
+
+.box-p {
+  margin: 0;
+  text-decoration: underline;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+}
+
+.box img {
+  max-width: 80%;
+}
+
+.contact {
+  display: flex;
+  padding: 10px 40px;
+}
+
+.left2, .right2 {
+  display: flex;
+  flex: 1;
+}
+
+.left2 img {
+  max-width: 80%;
+}
+
+.right2 {
+  padding: 0 2rem;
+  margin-top: 40px;
+  flex-direction: column;
+}
+
+
+.right2 form {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+.right2 form div input {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  /* padding-left: 15px; */
+  font-size: 16px;
+  font-weight: 200;
+}
+
+
+.right2 form button {
+  align-self: flex-end;
+  height: 30px;
+  width: 100px;
+}
+
+footer {
+  position: relative;
+  background-color: #4c5159;
+}
+
+.contact-div {
+  position: absolute;
+  top: -60px;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 70px; */
+  padding: 30px 50px;
+}
+
+.div1, .div2 {
+  display: flex;
+  flex: 1;
+}
+
+.div1 {
+  flex-direction: column;
+  gap: 6px;
+  margin-left: 50px;
+}
+
+.div2 {
+  justify-content: flex-end;
+}
+
+.div2 button {
+  background-color: black;
+  color: #ffffff;
+  padding: 9px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-right: 50px;
+}
+
+.div1 p {
+  margin: 0;
+}
+
+.bottom-footer {
+  padding: 50px 5px 30px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  gap: 5px;
+}
+
+.bottom-footer p {
+  padding-left: 20px;
+}
+
+.socials img {
+  max-width: 15%;
+}
